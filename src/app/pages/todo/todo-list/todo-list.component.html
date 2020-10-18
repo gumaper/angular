@@ -1,1 +1,16 @@
-<p>todo-list works!</p>
+<div class="row justify-content-center">
+  <div class="col-12 col-md-5 text-center mb-3">
+    <mat-form-field>
+      <mat-label>Nome da task...</mat-label>
+      <input matInput [formControl]="nomeTask" />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="ml-1" (click)="adicionarTask()">adicionar task</button>
+  </div>
+</div>
+
+<section class="row justify-content-center">
+  <app-task-item [title]="'task'" class="col-12 col-md-4"></app-task-item>
+  <app-task-item [title]="'iniciado'" class="col-12 col-md-4"></app-task-item>
+  <app-task-item [title]="'finalizado'" class="col-12 col-md-4"></app-task-item>
+</section>

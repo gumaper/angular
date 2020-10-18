@@ -1,0 +1,28 @@
+{
+  "todo": [
+    {
+      "id": 2,
+      "nome": "Estudar Angular",
+      "finalizado": false,
+      "iniciado": true
+    },
+    {
+      "id": 3,
+      "nome": "Estudar ionic",
+      "finalizado": false,
+      "iniciado": false
+    },
+    {
+      "id": 4,
+      "nome": "Estudar .net core",
+      "finalizado": false,
+      "iniciado": false
+    },
+    {
+      "nome": "Escolher tecnologias",
+      "finalizado": true,
+      "iniciado": true,
+      "id": 6
+    }
+  ]
+}

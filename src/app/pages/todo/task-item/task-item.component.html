@@ -1,0 +1,26 @@
+<div class="task">
+  <h3>{{ title }}</h3>
+
+  <ul>
+    <li *ngFor="let task of tasks$ | async">
+      <div></div>
+      {{ task.nome }}
+      <div>
+        <i class="fas fa-trash" *ngIf="!task.finalizado && !task.iniciado" (click)="removerTask(task.id)"></i>
+        <i
+          *ngIf="!task.finalizado && task.iniciado"
+          class="fas fa-undo"
+          (click)="updateTask(task, 'cancelarInicio')"
+        ></i>
+        <i
+          *ngIf="task.finalizado && task.iniciado"
+          class="fas fa-undo"
+          (click)="updateTask(task, 'cancelarFinalizado')"
+        ></i>
+        <i *ngIf="!task.finalizado && task.iniciado" class="fas fa-check" (click)="updateTask(task, 'finalizar')"></i>
+        <i *ngIf="!task.finalizado && !task.iniciado" class="fas fa-play" (click)="updateTask(task, 'iniciar')"></i>
+        <i class="fas fa-trash" *ngIf="task.finalizado && task.iniciado" (click)="removerTask(task.id)"></i>
+      </div>
+    </li>
+  </ul>
+</div>

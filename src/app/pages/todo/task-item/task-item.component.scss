@@ -1,0 +1,29 @@
+h3 {
+  background-color: #9b27af;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  box-shadow: var(--box-shadow-primary);
+
+  & > li:nth-child(odd) {
+    background-color: #f3f2f3;
+  }
+
+  & li {
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  i {
+    margin-left: 10px;
+  }
+}
