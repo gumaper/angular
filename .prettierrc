@@ -1,0 +1,10 @@
+{
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.labelFormat": "short",
+  "editor.rulers": [80, 120],
+  "printWidth": 120,
+  "quoteProps": "preserve",
+  "arrowParens": "avoid"
+}
