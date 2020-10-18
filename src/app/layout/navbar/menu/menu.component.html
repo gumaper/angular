@@ -1,0 +1,5 @@
+<ng-container *ngFor="let menu of menus">
+  <a [routerLink]="menu.route" routerLinkActive="active" class="mr-1">
+    {{ menu.title }}
+  </a>
+</ng-container>
